@@ -1,0 +1,59 @@
+div.list-simple{
+    border: 1px solid rgb(201, 201, 201);
+    border-radius: 8px;
+    padding: 0 5px 0 8px;
+}
+
+div.list-simple div.list-simple-item{
+    border-bottom: 1px solid rgb(201, 201, 201);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    transition: background-color .8s ease;
+    cursor: pointer;
+}
+
+div.list-simple div.list-simple-item:hover{
+    border-radius: 5px;
+    background-color: rgb(245, 245, 245);
+}
+
+div.list-simple div.list-simple-item:last-child{
+    border-bottom: none;
+}
+
+div.list-simple div.list-simple-item img{
+    width: 50px;
+    height: 50px;
+}
+
+div.list-simple div.list-simple-item svg{
+    color: #696a6d;
+    font-size: 16pt;
+}
+
+div.list-simple div.list-simple-item div.title-subtitle{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    padding-left: 8px;
+}
+div.list-simple div.list-simple-item div.title-subtitle h4{
+    font-weight: 600;
+    color: #383838;
+}
+div.list-simple div.list-simple-item div.title-subtitle span{
+    font-size: 9pt;
+    color: #696a6d;
+}
+
+div.list-simple div.list-simple-item div.actions{
+    display: flex;
+    width: 10%;
+    align-items: center;
+    justify-content: end;
+}
+
+div.list-simple div.list-simple-item div.actions svg{
+    color: #696a6d;
+}

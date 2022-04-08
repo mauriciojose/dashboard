@@ -1,0 +1,64 @@
+div.list-separate{
+    border-radius: 8px;
+    padding: 0 0px 0 0px;
+}
+
+div.list-separate div.list-separate-item{
+    background-color: rgb(245, 245, 245);
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    transition: background-color .2s ease;
+    cursor: pointer;
+    margin: 12px 0;
+    border-radius: 5px;
+}
+
+div.list-separate div.list-separate-item:hover{
+    background-color: rgb(224, 222, 222);
+}
+
+div.list-separate div.list-separate-item:last-child{
+    border-bottom: none;
+}
+
+div.list-separate div.list-separate-item img{
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+
+div.list-separate div.list-separate-item svg{
+    color: #696a6d;
+    font-size: 16pt;
+    background-color: white;
+    padding: 8px;
+    border-radius: 90px;
+    box-shadow: 0px 1px 1px #999;
+}
+
+div.list-separate div.list-separate-item div.title-subtitle{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    padding-left: 8px;
+}
+div.list-separate div.list-separate-item div.title-subtitle h4{
+    font-weight: 600;
+    color: #383838;
+}
+div.list-separate div.list-separate-item div.title-subtitle span{
+    font-size: 9pt;
+    color: #696a6d;
+}
+
+div.list-separate div.list-separate-item div.actions{
+    display: flex;
+    width: 10%;
+    align-items: center;
+    justify-content: end;
+}
+
+div.list-separate div.list-separate-item div.actions svg{
+    color: #696a6d;
+}

@@ -1,0 +1,128 @@
+
+form{
+    position: relative;
+    width: 100%;
+}
+
+
+form.form-decorator{
+    width: 100%;
+}
+
+input.form-decorator[type=text]{
+    width: 100%;
+    padding: 8px 4px;
+    border: 1.8px solid #9598A9;
+    border-radius: 3px;
+    height: 40px;
+}
+
+.error input.form-decorator[type=text]{
+    border: 1.8px solid red;
+}
+
+input.form-decorator[type=text]:focus{
+    outline: none;
+    border: 1.8px solid #52459F !important;
+}
+
+.container-form{
+    position: relative;
+    margin-top: 24px;
+}
+
+input.effect-input{
+    border: 1px solid #ccc; padding: 7px 14px; transition: 0.4s; background: transparent;   
+}
+
+.effect-input ~ .focus-border:before,
+.effect-input ~ .focus-border:after{
+    content: ""; position: absolute; top: 0; 
+    left: 0; 
+    width: 0; 
+    height: 2px; 
+    background-color: #52459F; 
+    transition: 0.4s;
+}
+
+.effect-input ~ .focus-border:after{
+    top: auto; 
+    bottom: 0; 
+    left: auto; 
+    right: 0;
+}
+
+.effect-input .focus-border{
+    border-radius: 90px;
+}
+.effect-input .focus-border i{
+    border-radius: 90px;
+}
+
+.effect-input ~ .focus-border i:before,
+.effect-input ~ .focus-border i:after{
+    content: ""; 
+    position: absolute; 
+    top: 0; 
+    left: 0;
+    width: 2px; 
+    height: 0; 
+    background-color: #52459F; 
+    transition: 0.4s;
+}
+
+.error .effect-input ~ .focus-border:before,
+.error .effect-input ~ .focus-border:after{
+    background-color: red; 
+}
+
+.error .effect-input ~ .focus-border i:before,
+.error .effect-input ~ .focus-border i:after{
+    background-color: red;
+}
+
+.effect-input ~ .focus-border i:after{left: auto; right: 0; top: auto; bottom: 0;}
+.effect-input:focus ~ .focus-border:before,
+.effect-input:focus ~ .focus-border:after,
+.has-content.effect-input ~ .focus-border:before,
+.has-content.effect-input ~ .focus-border:after{width: 100%; transition: 0.3s;}
+.effect-input:focus ~ .focus-border i:before,
+.effect-input:focus ~ .focus-border i:after,
+.has-content.effect-input ~ .focus-border i:before,
+.has-content.effect-input ~ .focus-border i:after{
+    height: 100%; 
+    transition: 0.4s;
+}
+.effect-input ~ label{
+    position: absolute; 
+    left: 0px; 
+    width: 100%; 
+    top: 10px; 
+    color: #aaa; 
+    transition: 0.3s; 
+    z-index: -1; 
+    letter-spacing: 0.5px;
+}
+.effect-input:focus ~ label, 
+.has-content.effect-input ~ label{
+    top: -19px; 
+    left: 0; 
+    font-size: 14px; 
+    font-weight: 500;
+    color: #52459F; 
+    transition: 0.3s;
+    z-index: 1;
+}
+
+.error .effect-input:focus ~ label, 
+.error .has-content.effect-input ~ label{
+    color: red !important;
+}
+
+.effect-input:focus::placeholder{
+    color: transparent;
+}
+
+h4.title-form{
+    margin: 12px 0;
+}

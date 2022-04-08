@@ -1,0 +1,51 @@
+div.list-form{
+    border-radius: 8px;
+    padding: 0 0px 0 0px;
+}
+
+div.list-form div.list-form-item{
+    border: 1px solid rgb(224, 222, 222);
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    transition: background-color .2s ease;
+    cursor: pointer;
+    margin: 6px 0;
+    border-radius: 5px;
+}
+
+div.list-form div.list-form-item input{
+    width: 20px;
+}
+
+div.list-form div.list-form-item-check{
+    border: 2px solid #52459F;
+    background-color: rgba(82, 69, 159, .1);
+}
+
+div.list-form div.list-form-item:hover{
+    background-color: rgb(245, 245, 245);
+}
+div.list-form div.list-form-item label.title-subtitle{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 8px;
+    cursor: pointer;
+    padding: 10px 8px;
+}
+div.list-form div.list-form-item label.title-subtitle h4{
+    font-weight: 600;
+    color: #383838;
+}
+div.list-form div.list-form-item label.title-subtitle span{
+    font-size: 9pt;
+    color: #696a6d;
+}
+
+div.list-form div.list-form-item div.actions{
+    display: flex;
+    width: 10%;
+    align-items: center;
+    justify-content: end;
+}

@@ -1,0 +1,120 @@
+div.list-form-select-container::-webkit-scrollbar {
+    width: 3px;
+    height: 1px;
+  }
+  
+  div.list-form-select-container::-webkit-scrollbar-track {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  div.list-form-select-container::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    border: 3px solid #ccc;
+    height: 10px;
+  }
+
+  div.list-form-select-container::-webkit-scrollbar-button {
+    height: 10px; 
+  }
+
+div.list-form-select{
+    width: 100%;
+
+}
+
+div.list-form-select select{
+    display: none;
+
+}
+
+div.list-form-select div.list-form-select-header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: 1px solid #9598A9;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 40px;
+}
+
+div.list-form-select div.list-form-select-header svg{
+    color: #696a6d;
+    transform: rotate(90deg);
+    animation-name: rotate;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards
+}
+
+div.list-form-select div.list-form-select-header-active svg{
+    animation-name: rotate-inverse;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards
+}
+
+@keyframes rotate { 
+    from { 
+        transform: rotate(-90deg); 
+    } to { 
+        transform: rotate(90deg); 
+    }
+}
+
+@keyframes rotate-inverse { 
+    from { 
+        transform: rotate(90deg); 
+    } to { 
+        transform: rotate(-90deg); 
+    }
+}
+
+div.list-form-select div.list-form-select-header div.selected-item-form{
+    width: 100%;
+    color: #696a6d;
+    display: flex;
+    align-items: center;
+}
+
+div.list-form-select div.list-form-select-header div.selected-item-form div.item-tag-list{
+    width: 100%;
+}
+
+div.list-form-select div.list-form-select-container{
+    color: #696a6d;
+    border: 1px solid #9598A9;
+    position: absolute;
+    width: 100%;
+    margin-top: 5px;
+    border-radius: 5px;
+    max-height: 206px;
+    overflow-y: scroll;
+    display: none;
+    background-color: white;
+    z-index: 5;
+}
+
+div.list-form-select div.list-form-select-container div.list-form-select-item{
+    padding: 10px 6px;
+    cursor: pointer;
+    border-bottom: 1px solid #ccc;
+}
+
+div.list-form-select div.list-form-select-container div.list-form-select-item-selected{
+    background-color: rgba(82, 69, 159, .2);
+}
+
+div.list-form-select div.list-form-select-container div.list-form-select-item:hover{
+    background-color: rgb(245, 245, 245);
+}
+
+
+div.list-form-select div.list-form-select-container div.list-form-select-item:last-child{
+    border-bottom: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+div.list-form-select div.list-form-select-container div.list-form-select-item:first-child{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
